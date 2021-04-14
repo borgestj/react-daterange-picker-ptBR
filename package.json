@@ -1,0 +1,50 @@
+{
+  "name": "@borgestj/react-daterange-picker",
+  "version": "0.0.1",
+  "description": "A react date range picker using Material Design PT-BR",
+  "author": {
+    "email": "borges.tj@gmail.com",
+    "name": "Roberto Borges"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/borgestj/react-daterange-picker-ptBR"
+  },
+  "main": "build/index.js",
+  "scripts": {
+    "start": "tsc --watch",
+    "build": "tsc",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "@material-ui/core": "^4.11.3",
+    "@material-ui/icons": "^4.11.2",
+    "date-fns": "^2.17.0"
+  },
+  "devDependencies": {
+    "@types/react": "^17.0.2",
+    "@types/react-dom": "^17.0.1",
+    "typescript": "^4.2.2"
+  },
+  "peerDependencies": {
+    "@material-ui/core": "^4.11.3",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1"
+  },
+  "keywords": [
+    "react",
+    "component",
+    "react-components",
+    "date-range",
+    "date",
+    "range",
+    "picker",
+    "material-design",
+    "material",
+    "typescript",
+    "npm",
+    "package",
+    "PT-BR"
+  ],
+  "license": "MIT"
+}
