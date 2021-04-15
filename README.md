@@ -5,16 +5,19 @@ A react date range picker using material-ui components in ptBR.
 ## Usage
 
 ```bash
-npm install @borgestj/react-daterange-picker --save
+npm install @borgestj/react-daterange-picker-ptbr --save
 # or with yarn
-yarn add @borgestj/react-daterange-picker
+yarn add @borgestj/react-daterange-picker-ptbr
 ```
 
 ## Basic Example
 
 ```tsx
 import React from 'react';
-import { DateRangePicker, DateRange } from '@borgestj/react-daterange-picker';
+import {
+  DateRangePicker,
+  DateRange,
+} from '@borgestj/react-daterange-picker-ptbr';
 
 type Props = {};
 type State = {
@@ -45,7 +48,10 @@ export default App;
 
 ```tsx
 import React from 'react';
-import { DateRangePicker, DateRange } from '@borgestj/react-daterange-picker';
+import {
+  DateRangePicker,
+  DateRange,
+} from '@borgestj/react-daterange-picker-ptbr';
 
 type Props = {};
 
