@@ -8,38 +8,39 @@ import {
   startOfMonth,
   endOfMonth,
   addMonths,
+  subHours,
 } from 'date-fns';
 
 const getDefaultRanges = (date: Date): DefinedRange[] => [
   {
     label: 'Hoje',
-    startDate: date,
-    endDate: date,
+    startDate: subHours(date, 3),
+    endDate: subHours(date, 3),
   },
   {
     label: 'Ontem',
-    startDate: addDays(date, -1),
-    endDate: addDays(date, -1),
+    startDate: addDays(subHours(date, 3), -1),
+    endDate: addDays(subHours(date, 3), -1),
   },
   {
     label: 'Semana Atual',
-    startDate: startOfWeek(date),
-    endDate: endOfWeek(date),
+    startDate: startOfWeek(subHours(date, 3)),
+    endDate: endOfWeek(subHours(date, 3)),
   },
   {
     label: 'Semana Passada',
-    startDate: startOfWeek(addWeeks(date, -1)),
-    endDate: endOfWeek(addWeeks(date, -1)),
+    startDate: startOfWeek(addWeeks(subHours(date, 3), -1)),
+    endDate: endOfWeek(addWeeks(subHours(date, 3), -1)),
   },
   {
     label: 'últimos 7 Dias',
-    startDate: addWeeks(date, -1),
-    endDate: date,
+    startDate: addWeeks(subHours(date, 3), -1),
+    endDate: subHours(date, 3),
   },
   {
     label: 'Mês Atual',
-    startDate: startOfMonth(date),
-    endDate: endOfMonth(date),
+    startDate: startOfMonth(subHours(date, 3)),
+    endDate: endOfMonth(subHours(date, 3)),
   },
   {
     label: 'Mês Passado',
