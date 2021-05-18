@@ -1,6 +1,6 @@
 {
   "name": "@borgestj/react-daterange-picker-ptbr",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "A react date range picker using Material Design PT-BR",
   "author": {
     "email": "borges.tj@gmail.com",
